@@ -1,4 +1,7 @@
 ﻿using AutoMapper;
+using System;
+using System.Linq;
+using System.Reflection;
 
 namespace Orderkeeper.Core.Common
 {
@@ -6,4 +9,5 @@ namespace Orderkeeper.Core.Common
     {
         public void Mapping(Profile profile) => profile.CreateMap(typeof(T), GetType());
     }
+
 }

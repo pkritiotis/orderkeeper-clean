@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Orderkeeper.Core.Customers
 {
-    public class GetCustomersQueryHandler : IRequestHandler<GetCustomersQuery, GetCustomersResult>
+    public class GetCustomersQueryHandler : IRequestHandler<GetCustomersQuery, IEnumerable<CustomerDto>>
     {
         private readonly IRepository<Customer> _repository;
         private readonly IMapper _mapper;
@@ -23,12 +23,9 @@ namespace Orderkeeper.Core.Customers
             _mapper = mapper;
         }
 
-        public async Task<GetCustomersResult> Handle(GetCustomersQuery request, CancellationToken cancellationToken)
+        public async Task<IEnumerable<CustomerDto>> Handle(GetCustomersQuery request, CancellationToken cancellationToken)
         {
-            return new GetCustomersResult
-            {
-                Customers = _mapper.Map<IEnumerable<CustomerDto>>(await _repository.GetAllAsync().ToListAsync())
-            };
+            return _mapper.Map<List<Customer>,IEnumerable<CustomerDto>>(await _repository.GetAllAsync().ToListAsync());
         }
     }
 }
