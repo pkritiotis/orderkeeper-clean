@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29230.47
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "orderkeeper.domain", "orderkeeper.domain\orderkeeper.domain.csproj", "{4794BD00-CEC5-418D-A4F7-9298100AF48D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orderkeeper.Domain", "orderkeeper.domain\Orderkeeper.Domain.csproj", "{4794BD00-CEC5-418D-A4F7-9298100AF48D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "orderkeeper.core", "orderkeeper.core\orderkeeper.core.csproj", "{6716817D-1EA0-4432-BC58-79F1D6FEF739}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orderkeeper.Core", "orderkeeper.core\Orderkeeper.Core.csproj", "{6716817D-1EA0-4432-BC58-79F1D6FEF739}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
