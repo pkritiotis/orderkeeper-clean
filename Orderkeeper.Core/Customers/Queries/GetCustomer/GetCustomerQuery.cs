@@ -7,6 +7,6 @@ namespace Orderkeeper.Core.Customers
 {
     public class GetCustomerQuery : IRequest<GetCustomerResult>
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
     }
 }
