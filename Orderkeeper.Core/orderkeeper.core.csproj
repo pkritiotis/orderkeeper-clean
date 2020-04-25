@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\orderkeeper.domain\Orderkeeper.Domain.csproj" />
+    <ProjectReference Include="..\Orderkeeper.Domain\Orderkeeper.Domain.csproj" />
   </ItemGroup>
 
 </Project>
