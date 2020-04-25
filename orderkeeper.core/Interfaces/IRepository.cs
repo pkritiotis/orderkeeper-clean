@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace orderkeeper.core.Interfaces
+namespace Orderkeeper.Core.Interfaces
 {
     public interface IRepository<T>
         where T : class

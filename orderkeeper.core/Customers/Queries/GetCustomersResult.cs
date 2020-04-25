@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace orderkeeper.core.Customers
+namespace Orderkeeper.Core.Customers
 {
     public class GetCustomersResult
     {

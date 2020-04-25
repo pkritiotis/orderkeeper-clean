@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using MediatR;
-using orderkeeper.core.Interfaces;
+using Orderkeeper.Core.Interfaces;
 using Orderkeeper.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace orderkeeper.core.Customers
+namespace Orderkeeper.Core.Customers
 {
     public class GetCustomersQueryHandler : IRequestHandler<GetCustomersQuery, GetCustomersResult>
     {

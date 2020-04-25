@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 
-namespace orderkeeper.core.Common
+namespace Orderkeeper.Core.Common
 {
     public abstract class MapFrom<T>
     {

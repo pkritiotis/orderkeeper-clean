@@ -1,10 +1,10 @@
-﻿using orderkeeper.core.Common;
+﻿using Orderkeeper.Core.Common;
 using Orderkeeper.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace orderkeeper.core.Customers
+namespace Orderkeeper.Core.Customers
 {
     public class CustomerDto : MapFrom<Customer>
     {
