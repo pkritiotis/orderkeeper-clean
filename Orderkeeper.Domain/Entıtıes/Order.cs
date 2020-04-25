@@ -10,8 +10,8 @@ namespace Orderkeeper.Domain.Entities
         public DateTime DateModified { get; set; }
         public DateTime DateIssued { get; set; }
         public int CustomerId { get; set; }
-        public IEnumerable<OrderItem> OrderItems {get;set;}
         public double  TotalAmount { get; set; }
+        public IEnumerable<OrderItem> OrderItems {get;set;}
         public Customer Customer { get; set; }
     }
 }
