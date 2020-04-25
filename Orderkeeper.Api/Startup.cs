@@ -7,6 +7,7 @@ using Orderkeeper.Core;
 using Orderkeeper.Core.Interfaces;
 using Orderkeeper.Domain.Entities;
 using Orderkeeper.Infrastructure;
+using OrderKeeper.Infrastructure;
 using System.Reflection.Metadata.Ecma335;
 
 namespace Orderkeeper.Api
@@ -25,6 +26,7 @@ namespace Orderkeeper.Api
         {
             services.AddTransient<IRepository<Customer>,CustomerRepository>();
             services.AddOrderkeeperCore();
+            services.AddInfrastructure(Configuration);
             services.AddControllers();
         }
 
