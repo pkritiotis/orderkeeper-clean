@@ -1,4 +1,7 @@
-﻿namespace Orderkeeper.Domain.Entities
+﻿using System.Collections;
+using System.Collections.Generic;
+
+namespace Orderkeeper.Domain.Entities
 {
     public class Customer
     {
@@ -8,5 +11,6 @@
         public string Address { get; set; }
         public string EmailAddress { get; set; }
         public string Fax { get; set; }
+        public virtual IEnumerable<Order> Orders { get; set; }
     }
 }

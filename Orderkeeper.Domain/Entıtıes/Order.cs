@@ -12,6 +12,6 @@ namespace Orderkeeper.Domain.Entities
         public int CustomerId { get; set; }
         public IEnumerable<OrderItem> OrderItems {get;set;}
         public double  TotalAmount { get; set; }
-
+        public Customer Customer { get; set; }
     }
 }
