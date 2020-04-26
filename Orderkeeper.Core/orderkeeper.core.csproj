@@ -15,8 +15,6 @@
 
   <ItemGroup>
     <Folder Include="Orders\" />
-    <Folder Include="Suppliers\" />
-    <Folder Include="Supplies\" />
     <Folder Include="Products\" />
   </ItemGroup>
 

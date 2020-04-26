@@ -19,7 +19,7 @@ namespace Orderkeeper.Infrastructure
             this._applicationDbContext = applicationDbContext;
         }
 
-        public async Task<Guid> CreateByAsync(Customer entity)
+        public async Task<Guid> CreateAsync(Customer entity)
         {
             entity.Id = Guid.NewGuid();
             await _applicationDbContext.Customers.AddAsync(entity);

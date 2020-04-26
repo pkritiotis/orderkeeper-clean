@@ -12,7 +12,7 @@ namespace Orderkeeper.Core.Interfaces
         IAsyncEnumerable<T> GetAllAsync();
         IAsyncEnumerable<T> GetByAsync(Expression<Func<T, bool>> filter);
         Task<T> GetSingleByAsync(Expression<Func<T, bool>> filter);
-        Task<Guid> CreateByAsync(T entity);
+        Task<Guid> CreateAsync(T entity);
         Task UpdateByAsync(Expression<Func<T, bool>> filter,T entity);
         Task DeleteByAsync(Expression<Func<T, bool>> filter);
     }
