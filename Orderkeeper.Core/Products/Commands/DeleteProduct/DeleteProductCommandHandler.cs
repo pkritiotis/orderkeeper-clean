@@ -20,7 +20,7 @@ namespace Orderkeeper.Core.Products.Commands.DeleteProduct
         }
         public async Task<Unit> Handle(DeleteProductCommand request, CancellationToken cancellationToken)
         {
-            await _productRepository.DeleteByAsync(x => x.Id == request.productId);
+            await _productRepository.DeleteByAsync(x => x.Id == request.ProductId);
             return await Task.FromResult(Unit.Value);
         }
 

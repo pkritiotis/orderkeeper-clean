@@ -20,7 +20,7 @@ namespace Orderkeeper.Core.Orders.Commands.DeleteOrder
         }
         public async Task<Unit> Handle(DeleteOrderCommand request, CancellationToken cancellationToken)
         {
-            await _orderRepository.DeleteByAsync(x => x.Id == request.orderId);
+            await _orderRepository.DeleteByAsync(x => x.Id == request.OrderId);
             return await Task.FromResult(Unit.Value);
         }
 

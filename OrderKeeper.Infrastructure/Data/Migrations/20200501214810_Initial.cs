@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace OrderKeeper.Infrastructure.Data.Migrations
 {
-    public partial class InitialMigration : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -27,8 +27,7 @@ namespace OrderKeeper.Infrastructure.Data.Migrations
                 name: "Products",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<Guid>(nullable: false),
                     Name = table.Column<string>(nullable: true),
                     DefaultPrice = table.Column<double>(nullable: false),
                     PriceCurrency = table.Column<string>(nullable: true),
@@ -43,21 +42,16 @@ namespace OrderKeeper.Infrastructure.Data.Migrations
                 name: "Orders",
                 columns: table => new
                 {
-                    Id = table.Column<long>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    DateCreated = table.Column<DateTime>(nullable: false),
-                    DateModified = table.Column<DateTime>(nullable: false),
-                    DateIssued = table.Column<DateTime>(nullable: false),
-                    CustomerId = table.Column<int>(nullable: false),
-                    TotalAmount = table.Column<double>(nullable: false),
-                    CustomerId1 = table.Column<Guid>(nullable: false)
+                    Id = table.Column<Guid>(nullable: false),
+                    CustomerId = table.Column<Guid>(nullable: false),
+                    TotalAmount = table.Column<double>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Orders", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Orders_Customers_CustomerId1",
-                        column: x => x.CustomerId1,
+                        name: "FK_Orders_Customers_CustomerId",
+                        column: x => x.CustomerId,
                         principalTable: "Customers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -67,13 +61,12 @@ namespace OrderKeeper.Infrastructure.Data.Migrations
                 name: "OrderItems",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    ProductId = table.Column<int>(nullable: false),
+                    Id = table.Column<Guid>(nullable: false),
+                    ProductId = table.Column<Guid>(nullable: false),
                     ProductName = table.Column<string>(nullable: true),
                     UnitPrice = table.Column<double>(nullable: false),
                     Quantity = table.Column<int>(nullable: false),
-                    OrderId = table.Column<long>(nullable: false)
+                    OrderId = table.Column<Guid>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -103,9 +96,9 @@ namespace OrderKeeper.Infrastructure.Data.Migrations
                 column: "ProductId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Orders_CustomerId1",
+                name: "IX_Orders_CustomerId",
                 table: "Orders",
-                column: "CustomerId1");
+                column: "CustomerId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
