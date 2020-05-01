@@ -17,7 +17,6 @@
     <Folder Include="Orders\Commands\DeleteOrder\" />
     <Folder Include="Orders\Commands\UpdateOrder\" />
     <Folder Include="Orders\Queries\GetOrder\" />
-    <Folder Include="Products\" />
   </ItemGroup>
 
   <ItemGroup>
