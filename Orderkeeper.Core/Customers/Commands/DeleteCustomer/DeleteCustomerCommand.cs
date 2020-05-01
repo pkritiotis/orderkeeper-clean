@@ -8,6 +8,6 @@ namespace Orderkeeper.Core.Customers.Commands.DeleteCustomer
 {
     public class DeleteCustomerCommand : IRequest
     {
-        public Guid customerId { get; set; }
+        public Guid CustomerId { get; set; }
     }
 }

@@ -34,7 +34,7 @@ namespace Orderkeeper.Api.Controllers
         [HttpDelete("{Id}")]
         public async Task Delete(Guid Id)
         {
-            await Mediator.Send(new DeleteCustomerCommand { customerId = Id });
+            await Mediator.Send(new DeleteCustomerCommand { CustomerId = Id });
         }
 
         [HttpPut("{Id}")]

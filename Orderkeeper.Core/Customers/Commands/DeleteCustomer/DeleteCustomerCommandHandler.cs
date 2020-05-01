@@ -20,7 +20,7 @@ namespace Orderkeeper.Core.Customers.Commands.DeleteCustomer
         }
         public async Task<Unit> Handle(DeleteCustomerCommand request, CancellationToken cancellationToken)
         {
-            await _customerRepository.DeleteByAsync(x => x.Id == request.customerId);
+            await _customerRepository.DeleteByAsync(x => x.Id == request.CustomerId);
             return await Task.FromResult(Unit.Value);
         }
 
