@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orderkeeper.Core", "Orderke
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orderkeeper.Api", "Orderkeeper.Api\Orderkeeper.Api.csproj", "{3AB6D3D0-1CF8-45D9-AB23-9FD847509B7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderKeeper.Infrastructure", "OrderKeeper.Infrastructure\OrderKeeper.Infrastructure.csproj", "{ABBEE70B-B22B-4E96-95A0-8DD2D9FF3CDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderKeeper.Infrastructure", "OrderKeeper.Infrastructure\OrderKeeper.Infrastructure.csproj", "{ABBEE70B-B22B-4E96-95A0-8DD2D9FF3CDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orderkeeper.WebUI", "Orderkeeper.WebUI\Orderkeeper.WebUI.csproj", "{839327C8-F088-4257-8431-DCA54E093FEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,18 @@ Global
 		{ABBEE70B-B22B-4E96-95A0-8DD2D9FF3CDE}.Release|x64.Build.0 = Release|Any CPU
 		{ABBEE70B-B22B-4E96-95A0-8DD2D9FF3CDE}.Release|x86.ActiveCfg = Release|Any CPU
 		{ABBEE70B-B22B-4E96-95A0-8DD2D9FF3CDE}.Release|x86.Build.0 = Release|Any CPU
+		{839327C8-F088-4257-8431-DCA54E093FEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{839327C8-F088-4257-8431-DCA54E093FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{839327C8-F088-4257-8431-DCA54E093FEF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{839327C8-F088-4257-8431-DCA54E093FEF}.Debug|x64.Build.0 = Debug|Any CPU
+		{839327C8-F088-4257-8431-DCA54E093FEF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{839327C8-F088-4257-8431-DCA54E093FEF}.Debug|x86.Build.0 = Debug|Any CPU
+		{839327C8-F088-4257-8431-DCA54E093FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{839327C8-F088-4257-8431-DCA54E093FEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{839327C8-F088-4257-8431-DCA54E093FEF}.Release|x64.ActiveCfg = Release|Any CPU
+		{839327C8-F088-4257-8431-DCA54E093FEF}.Release|x64.Build.0 = Release|Any CPU
+		{839327C8-F088-4257-8431-DCA54E093FEF}.Release|x86.ActiveCfg = Release|Any CPU
+		{839327C8-F088-4257-8431-DCA54E093FEF}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
